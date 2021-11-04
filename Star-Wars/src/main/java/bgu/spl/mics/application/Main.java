@@ -8,9 +8,9 @@ import com.google.gson.Gson;
 
 import java.io.*;
 
-/** This is the Main class of the application. You should parse the input file,
+/** This is the Main class of the application. I parse the input file,
  * create the different components of the application, and run the system.
- * In the end, you should output a JSON.
+ * In the end, I output a Json.
  */
 public class Main {
 

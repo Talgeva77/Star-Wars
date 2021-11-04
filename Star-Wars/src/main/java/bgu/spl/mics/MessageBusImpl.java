@@ -4,13 +4,11 @@ import java.util.concurrent.*;
 
 /**
  * The {@link MessageBusImpl class is the implementation of the MessageBus interface.
- * Write your implementation here!
- * Only private fields and methods can be added to this class.
  */
 public class MessageBusImpl implements MessageBus {
-	private ConcurrentHashMap<Class<? extends Message>, ConcurrentLinkedQueue<MicroService>> HashMapMsgToMS; //Hash Map of Messages with Queue of MicroServices in any of the values
-	private ConcurrentHashMap< MicroService, LinkedBlockingQueue<Message>> HashMapMStoMsg;//Hash Map of MicroServices with Queue of Messages in any of the values
-	private ConcurrentHashMap<Event, Future> HashMapEventToFuture;// Hash Map of events that includes all the future values of the events
+	private ConcurrentHashMap<Class<? extends Message>, ConcurrentLinkedQueue<MicroService>> HashMapMsgToMS; //Hash Map of Messages with Queue of MicroServices in any of the values.
+	private ConcurrentHashMap< MicroService, LinkedBlockingQueue<Message>> HashMapMStoMsg;//Hash Map of MicroServices with Queue of Messages in any of the values.
+	private ConcurrentHashMap<Event, Future> HashMapEventToFuture;// Hash Map of events that includes all the future values of the events.
 	private static class MessageBusImplholder{//Creating Singleton
 		private static MessageBusImpl instance = new MessageBusImpl();
 	}

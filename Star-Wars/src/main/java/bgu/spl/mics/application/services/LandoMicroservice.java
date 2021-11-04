@@ -7,11 +7,6 @@ import bgu.spl.mics.application.messages.DeactivationEvent;
 import bgu.spl.mics.application.messages.RebelsWonBroadcast;
 import bgu.spl.mics.application.passiveObjects.Diary;
 
-/**
- * LandoMicroservice
- * You can add private fields and public methods to this class.
- * You MAY change constructor signatures and even add new public constructors.
- */
 public class LandoMicroservice  extends MicroService {
     private long duration;
     private Diary d;
